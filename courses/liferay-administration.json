@@ -1,0 +1,42 @@
+{
+    "id": "liferay-administration", 
+    "product": "Liferay",
+    "version": "7.1", 
+    "name": "Platform Admininstration",
+    "audience": ["System Managers that want to administer Liferay Platform"], 
+    "chapters": [
+        {"title":"1. Overview","content": ["Portals","Portlets","LR Editions"] },
+        {"title":"2. Architecture", "content": ["Components","Protocols", "Technologies"] },
+        {"title":"3. Installation", "content": ["Download", "Installation", "Starting","Troubleshooting"] },
+        {"title":"4. Basic Administration", "content": ["User Management","Site Management", "Content Management"] },
+        {"title":"5. Content Modelling", "content": ["Structures", "Dynamic Data Lists", "Forms", "Templates"] },
+        {"title":"6. Administration", "content": ["Tunning","Security", "Index Engines", "Backup", "Recovery"]},
+        {"title":"7. Troubleshooting", "content": ["Logs","Monitoring"]}
+    ], 
+    "requisites": [
+        "XML/json",
+        "javascript"
+    ], 
+    "sessions": "4", 
+    "hours": "4", 
+    "cost": "$599.00", 
+    "description": "Liferay Portal is a free and open source enterprise portal software product. Distributed under the GNU Lesser General Public License and optional commercial license. It is primarily used to power corporate intranets and extranets.",
+    "objectives": [
+        "Understand Liferay Platform Architecture",
+        "Perform installation and initial configuration tasks.",
+        "Manage user and site elements",
+        "Customize asset model",
+        "Perform document management operations",
+        "Configure platform properties for proper performance.",
+        "Perform backup & recovery"
+    ],
+    "materials":[
+        "VM with products","PDF with presentation",
+        "PDF with resolved labs.",
+        " No printed materials"],
+    "teacher":"Open Source Architect with more that 5 years of experience on Liferay Platform",
+    "certification":"yes",
+    "images": [
+        "img/courses/liferay200x200.png"
+    ]
+}

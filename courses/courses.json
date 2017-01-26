@@ -1,0 +1,17 @@
+[
+    {
+        "age": 0, 
+        "id": "alfresco-administration", 
+        "imageUrl": "img/courses/alfresco200x200.png", 
+        "name": "Alfresco 5.1- Platform Administration", 
+        "snippet": "Manage Alfresco Platform: Install, Start-Stop, Backup & Recovery, Troubleshooting, Tunning, Indexing."
+    }, 
+    {
+        "age": 1, 
+        "id": "liferay-administration", 
+        "imageUrl": "img/courses/liferay200x200.png", 
+        "name": "Liferay 7.0 - Portlet Development", 
+        "snippet": "Develop applications through the use of Liferay Portal."
+    }
+
+]

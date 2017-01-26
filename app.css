@@ -1,0 +1,103 @@
+body {
+  padding: 20px;
+}
+
+h1 {
+/*   border-bottom: 1px solid gray;
+ */  margin-top: 0;
+}
+
+/* View: course list */
+.courses {
+  list-style: none;
+}
+
+.courses li {
+  clear: both;
+  height: 115px;
+  padding-top: 15px;
+}
+
+.thumb {
+  float: left;
+  height: 100px;
+  margin: -0.5em 1em 1.5em 0;
+  padding-bottom: 1em;
+  width: 100px;
+}
+
+/* View: course detail */
+.course {
+  background-color: white;
+  display: none;
+  float: left;
+  height: 200px;
+  margin-bottom: 2em;
+  margin-right: 3em;
+  width: 200px;
+}
+
+.course:first-child {
+  display: block;
+}
+
+.course-images {
+  background-color: white;
+  float: left;
+  overflow: hidden;
+  width: 250px;
+}
+
+.course-thumbs {
+  list-style: none;
+  margin: 0;
+}
+
+.course-thumbs img {
+  height: 100px;
+  padding: 1em;
+  width: 100px;
+}
+
+.course-thumbs li {
+  background-color: white;
+  border: 1px solid black;
+  cursor: pointer;
+  display: inline-block;
+  margin: 1em;
+}
+
+.specs {
+  clear: both;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.specs dt {
+  font-weight: bold;
+}
+
+.specs > li {
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+}
+
+.specs > li > span {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.details {
+
+  display: inline-block;
+  float: left;
+  vertical-align: top;
+
+  padding-right: 20px;
+}
+
+.details li {
+  margin-left: 20px;
+}

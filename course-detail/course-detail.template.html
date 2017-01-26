@@ -1,0 +1,56 @@
+<div class="col-md-2">
+
+  <img ng-src="{{img}}" class="course" 
+  ng-class="{selected: img === $ctrl.mainImageUrl}"
+  ng-repeat="img in $ctrl.course.images" />
+
+  <!--ul class="course-thumbs">
+    <li ng-repeat="img in $ctrl.course.images">
+      <img ng-src="{{img}}" ng-click="$ctrl.setImage(img)" />
+    </li>
+  </ul-->
+
+</div>
+
+<div class="col-md-10">
+<h1>{{$ctrl.course.product}} {{$ctrl.course.version}} - {{$ctrl.course.name}}</h1>
+
+  <p>{{$ctrl.course.description}}</p>
+
+  <ul class="details" >
+    <h4>Objectives</h4>
+    <li ng-repeat="item in $ctrl.course.objectives">{{item}}</li>
+
+    <h4>Audience</h4>
+    <li ng-repeat="item in $ctrl.course.audience">{{item}}</li>
+
+  </ul>
+
+  <ul class="details" >
+    <h4>Duration</h4>
+    <li>{{$ctrl.course.sessions}} sessions of {{$ctrl.course.sessions}} hours each.</li>
+
+    <h4>Materials included</h4>
+    <li ng-repeat="item in $ctrl.course.materials">{{item}}</li>
+
+    <h4>Certification Simulation</h4>
+    <li>{{$ctrl.course.certification}}.</li>
+
+  </ul>
+
+  <ul class="details" >
+
+    <h4>Price</h4>
+    <li>{{$ctrl.course.cost}}.</li>
+  </ul>
+
+  <ul class="specs">
+    <H3>Summary</H3>
+    <li ng-repeat="chapter in $ctrl.course.chapters">
+      <dl >
+        <dt>{{chapter.title}}</dt>
+        <dd ng-repeat="content in chapter.content">{{content}}</dd>
+      </dl>
+    </li>
+  </ul>
+</div>
