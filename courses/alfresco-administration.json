@@ -37,8 +37,6 @@
     "teacher":"Open Source Architect with more that 5 years of experience on Alfresco Platform",
     "certification":"yes",
     "images": [
-        "img/courses/alfresco200x200.png",
-        "img/courses/alfresco-003.0.jpg",
-        "img/courses/alfresco-001.0.jpg"
+        "img/courses/alfresco200x200.png"
     ]
 }

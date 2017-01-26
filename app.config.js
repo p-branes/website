@@ -1,12 +1,12 @@
 'use strict';
 
 angular.
-  module('p-branes').
-  config(['$locationProvider' ,'$routeProvider',
-    function config($locationProvider, $routeProvider) {
-      $locationProvider.hashPrefix('!');
+module('p-branes').
+config(['$locationProvider' ,'$routeProvider',
+       function config($locationProvider, $routeProvider) {
+        $locationProvider.hashPrefix('!');
 
-      $routeProvider.
+        $routeProvider.
         when('/courses', {
           template: '<course-list></course-list>'
         }).
@@ -21,7 +21,15 @@ angular.
         // }).
         otherwise('/courses');
 
+      }]).
 
-    }
-  ]);
+run(['$rootScope', '$location', '$window',
+    function run($rootScope, $location, $window) {
+        $window.ga('create', 'UA-90931272-1', 'auto');
+ 
+        $rootScope.$on('$locationChangeStart', function (event) {
+          $window.ga('send', 'pageview', $location.path());
+        })
+
+      }]);
 
